@@ -1,7 +1,4 @@
-from PyQt5.QtWidgets import QApplication
-from model import SettingsModel
-from view import SettingsView
-import sys
+
 
 
 class SettingsController:
@@ -22,15 +19,3 @@ class SettingsController:
 
         self.model.save_settings()
         self.view.show_message("Настройки сохранены успешно")
-
-
-if __name__ == '__main__':
-    app = QApplication(sys.argv)
-
-    model = SettingsModel()
-    view = SettingsView()
-    controller = SettingsController(model, view)
-
-    view.show()
-
-    sys.exit(app.exec_())

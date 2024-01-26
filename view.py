@@ -9,6 +9,7 @@ class SettingsView(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("Quick Access Utility")
+        self.setWindowIcon(QIcon('images\\app_icon.png'))
         self.setGeometry(100, 100, 400, 200)
 
         self.startup_checkbox = QCheckBox("Запускать приложение при запуске системы", self)
@@ -24,7 +25,7 @@ class SettingsView(QMainWindow):
         self.save_button.setGeometry(10, 130, 150, 30)
 
         # Иконка в трее
-        self.tray_icon = QSystemTrayIcon(QIcon('app_icon.png'), self)
+        self.tray_icon = QSystemTrayIcon(QIcon('images\\app_icon.png'), self)
         self.tray_icon.setToolTip('Quick Access Utility')
 
         # Контекстное меню трея
