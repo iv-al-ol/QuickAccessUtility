@@ -11,7 +11,7 @@ class SettingsModel:
         self.load_settings()
 
     def set_settings_file(self):
-        """Опреледяет папку и файл настроек."""
+        """Определяет папку и файл настроек."""
         self.settings_folder = os.path.join(os.path.expanduser("~"),
                                              "Documents", 
                                              "QuickAccessUtility")
