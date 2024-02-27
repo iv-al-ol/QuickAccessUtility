@@ -18,4 +18,4 @@ class SettingsController:
         self.model.tray_enabled = self.view.tray_checkbox.isChecked()
 
         self.model.save_settings()
-        self.view.show_message("Настройки сохранены успешно")
+        self.view.show_message("Настройки успешно сохранены...")
